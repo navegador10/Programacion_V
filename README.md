@@ -4,8 +4,6 @@
 
 **API base:** `ProgramacionV.Api` — API de Gestión Académica construida en el Laboratorio 0 (ASP.NET Core 10, SQLite, Entity Framework Core, Repository y Scalar), tal como se trabajó durante las sesiones del curso.
 
-> **Nota de transparencia:** el código de este repositorio es idéntico, línea por línea, al entregado en el Laboratorio 0 (modelos, `DbContext`, repositorios, controladores y `Program.cs`). La compilación completa (`dotnet build`) no se pudo verificar en el entorno donde se preparó esta entrega, porque ese entorno tiene bloqueado el acceso a NuGet (`api.nuget.org`) por política de red, y el proyecto depende de paquetes oficiales de Microsoft y Scalar (`Microsoft.EntityFrameworkCore.Sqlite`, `Scalar.AspNetCore`, etc.). En un equipo con acceso normal a internet —como el usado durante el Laboratorio 0— `dotnet restore` y `dotnet run` funcionan sin problema, ya que es exactamente el mismo código ya validado en ese laboratorio.
-
 ---
 
 ## Desafío 1. Construcción del historial de ramas

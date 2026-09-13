@@ -32,7 +32,7 @@ app.MapOpenApi();
 app.MapScalarApiReference(options =>
 {
     options.WithTitle(
-        "Programación V - API Gestión Académica");
+        "Programación V - API Gestión Académica"); // Version 1.0.0
 });
 
 // Cuando se ingresa a la raíz,

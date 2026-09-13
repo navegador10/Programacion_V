@@ -47,6 +47,7 @@ public class EstudianteRepository
         actual.Documento = estudiante.Documento;
         actual.Nombre = estudiante.Nombre;
         actual.Correo = estudiante.Correo;
+        actual.Telefono = estudiante.Telefono;
         actual.ProgramaAcademicoId =
             estudiante.ProgramaAcademicoId;
 

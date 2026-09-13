@@ -45,6 +45,7 @@ public class AppDbContext : DbContext
                 Documento = "1001001001",
                 Nombre = "Ana Torres",
                 Correo = "ana.torres@universidad.edu.co",
+                Telefono = "3001111111",
                 ProgramaAcademicoId = 1
             },
             new Estudiante
@@ -53,6 +54,7 @@ public class AppDbContext : DbContext
                 Documento = "1001001002",
                 Nombre = "Carlos Gómez",
                 Correo = "carlos.gomez@universidad.edu.co",
+                Telefono = "3002222222",
                 ProgramaAcademicoId = 1
             },
             new Estudiante
@@ -61,6 +63,7 @@ public class AppDbContext : DbContext
                 Documento = "1001001003",
                 Nombre = "Laura Pérez",
                 Correo = "laura.perez@universidad.edu.co",
+                Telefono = "3003333333",
                 ProgramaAcademicoId = 1
             },
             new Estudiante
@@ -69,6 +72,7 @@ public class AppDbContext : DbContext
                 Documento = "1001001004",
                 Nombre = "Miguel Ramírez",
                 Correo = "miguel.ramirez@universidad.edu.co",
+                Telefono = "3004444444",
                 ProgramaAcademicoId = 2
             },
             new Estudiante
@@ -77,6 +81,7 @@ public class AppDbContext : DbContext
                 Documento = "1001001005",
                 Nombre = "Sofía Martínez",
                 Correo = "sofia.martinez@universidad.edu.co",
+                Telefono = "3005555555",
                 ProgramaAcademicoId = 2
             }
         );

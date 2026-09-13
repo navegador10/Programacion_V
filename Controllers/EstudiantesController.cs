@@ -36,6 +36,15 @@ public class EstudiantesController : ControllerBase
         return Ok(estudiante);
     }
 
+    [HttpGet("programa/{programaAcademicoId}")]
+    public async Task<IActionResult> GetByPrograma(int programaAcademicoId)
+    {
+        var estudiantes =
+            await _repository.GetByProgramaAsync(programaAcademicoId);
+
+        return Ok(estudiantes);
+    }
+
     [HttpPost]
     public async Task<IActionResult> Create(
         Estudiante estudiante)

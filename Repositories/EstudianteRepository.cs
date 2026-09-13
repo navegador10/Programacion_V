@@ -27,6 +27,14 @@ public class EstudianteRepository
             .FirstOrDefaultAsync(x => x.Id == id);
     }
 
+    public async Task<List<Estudiante>> GetByProgramaAsync(int programaAcademicoId)
+    {
+        return await _context.Estudiantes
+            .Include(x => x.ProgramaAcademico)
+            .Where(x => x.ProgramaAcademicoId == programaAcademicoId)
+            .ToListAsync();
+    }
+
     public async Task<Estudiante> CreateAsync(
         Estudiante estudiante)
     {

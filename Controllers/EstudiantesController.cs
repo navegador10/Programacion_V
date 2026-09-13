@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProgramacionV.Api.Models;
 using ProgramacionV.Api.Repositories;
+using ProgramacionV.Api.Validators;
 
 namespace ProgramacionV.Api.Controllers;
 
@@ -40,6 +41,11 @@ public class EstudiantesController : ControllerBase
     public async Task<IActionResult> Create(
         Estudiante estudiante)
     {
+        if (!TelefonoValidator.EsValido(estudiante.Telefono))
+        {
+            return BadRequest("El telefono debe tener 10 digitos y comenzar por 3.");
+        }
+
         estudiante.ProgramaAcademico = null;
         var creado =
             await _repository.CreateAsync(estudiante);
@@ -51,6 +57,11 @@ public class EstudiantesController : ControllerBase
         int id,
         Estudiante estudiante)
     {
+        if (!TelefonoValidator.EsValido(estudiante.Telefono))
+        {
+            return BadRequest("El telefono debe tener 10 digitos y comenzar por 3.");
+        }
+
         estudiante.Id = id;
         var actualizado =
             await _repository.UpdateAsync(estudiante);
